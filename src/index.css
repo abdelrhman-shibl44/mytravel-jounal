@@ -1,0 +1,129 @@
+/* rest page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+
+@media(min-width:768px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media(min-width:991px) {
+  .container {
+    width: 800px;
+  }
+}
+
+@media(min-width:1200px) {
+  .container {
+    width: 900px;
+  }
+}
+
+header {
+  text-align: center;
+  height: 70px;
+  line-height: 70px;
+  color: #fff;
+  background: linear-gradient(160deg,
+      rgba(0, 0, 139, 0.878),
+      rgba(0, 0, 139, 0.659))
+}
+
+.allTrips {
+  margin: 50px 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+.trip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.trip .info .location {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.trip .info .location>span {
+  font-size: 18px;
+  letter-spacing: 1.6px
+}
+
+.trip .info .location span:last-child {
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.trip h1 {
+  font-size: 30px
+}
+
+.trip .info .date {
+  font-weight: 500;
+}
+
+.description {
+  max-width: 600px;
+  line-height: 1.4;
+}
+
+
+@media(max-width:768px) {
+  .trip {
+    transition: 0.5s;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .trip .info .location {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.imgHolder {
+  flex-shrink: 0;
+  width: 180px;
+  height: 240px;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.locationIcon {
+  color: #4444a7;
+  font-size: 17px;
+}
