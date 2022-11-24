@@ -4,7 +4,7 @@ export default function Journeys(props) {
     return (
         <div className="trip">
             <div className="imgHolder">
-                <img src={`/images/${props.imageUrl}`} />
+                <img src={`images/${props.imageUrl}`} />
             </div>
             <div className="info">
                 <div className="location">
