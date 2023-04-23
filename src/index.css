@@ -12,7 +12,9 @@ body {
     sans-serif;
     background-color: #fff;
 }
-
+.App{
+  background-color: #fff;
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
